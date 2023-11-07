@@ -26,7 +26,7 @@ jobs:
         run: npm i -g @tuckn/insert-gtag tslib
 
       - name: Install deps
-        run: npm ci
+        run: npm i
 
       - name: Build
         run: npm run build
