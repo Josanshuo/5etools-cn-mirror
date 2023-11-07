@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
 
       - name: Caching NPM
         uses: actions/cache@master
@@ -26,7 +29,7 @@ jobs:
         run: npm i -g @tuckn/insert-gtag tslib
 
       - name: Install deps
-        run: npm i
+        run: npm ci
 
       - name: Build
         run: npm run build
