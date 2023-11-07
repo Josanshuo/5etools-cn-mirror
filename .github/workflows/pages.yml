@@ -32,10 +32,6 @@ jobs:
          -  name: Checkout
             uses: actions/checkout@master
 
-         -  name: Set Deployed Flag
-            run: |
-               bash ./.github/set-deployed-flag.sh ${{ github.ref_name }}
-
          # Remove entries from the `.gitignore` so the gh-pages action can correctly add+commit them to the pages branch
          -  name: Build Service Worker
             run: |
