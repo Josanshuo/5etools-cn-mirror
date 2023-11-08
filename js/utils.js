@@ -2045,7 +2045,9 @@ UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_RACES] = (it) => UrlUtil.encodeForHas
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_REWARDS] = (it) => UrlUtil.encodeForHash([it.ENG_name, it.source]);
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_VARIANTRULES] = (it) => UrlUtil.encodeForHash([it.ENG_name, it.source]);
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_ADVENTURE] = (it) => UrlUtil.encodeForHash(it.id);
+UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_ADVENTURES] = UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_ADVENTURE];
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_BOOK] = (it) => UrlUtil.encodeForHash(it.id);
+UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_BOOKS] = UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_BOOK];
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_DEITIES] = (it) => UrlUtil.encodeForHash([it.ENG_name, it.pantheon, it.source]);
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_CULTS_BOONS] = (it) => UrlUtil.encodeForHash([it.ENG_name, it.source]);
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_OBJECTS] = (it) => UrlUtil.encodeForHash([it.ENG_name, it.source]);
